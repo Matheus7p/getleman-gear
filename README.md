@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Projeto de Lance de Rolex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples de aplicação onde os usuários podem inserir um lance para um relógio Rolex. A aplicação verifica se o lance está dentro dos critérios definidos e exibe mensagens apropriadas.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- Jest (para testes unitários)
+- Cypress (para testes de integração)
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Antes de rodar o projeto, verifique se você tem os seguintes softwares instalados:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (recomendado: versão 14 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) (gerenciador de pacotes)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Como Rodar o Projeto
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone o repositório:**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   git clone https://github.com/Matheus7p/getleman-gear
+   cd getleman-gear
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+2. **Rode o projeto:**
+
+   ```bash
+   npm run dev
+
+2. **Rode os testes:**
+
+   ```bash
+   npm run test
+   npx cypress open
+
+
+### Scripts Disponíveis
+
+- **`npm run dev`** ou **`yarn dev`**: Inicia o servidor de desenvolvimento.
+- **`npm run test`** ou **`yarn test`**: Roda os testes da aplicação.
+- **`npx cypress open`**: Abre o ambiente de testes do cypress.
