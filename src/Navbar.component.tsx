@@ -6,10 +6,10 @@ export const Navbar = () => {
       <h1><span>Gentleman's Gear</span></h1>
       
         <div className={styles.links}>
-          <h3>Início</h3>
-          <h3><span>Produto</span></h3>
-          <h3>Galeria</h3>
-          <h3>Sobre</h3>    
+          <h3 className={styles.link}>Início</h3>
+          <h3 className={styles.mainLink}><span>Produto</span></h3>
+          <h3 className={styles.link}>Galeria</h3>
+          <h3 className={styles.link}>Sobre</h3>    
         </div>
     </nav>
   );
