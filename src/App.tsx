@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-import { Navbar } from './components/navbar.component.tsx';
+import { Navbar } from "./Navbar.component.tsx";
 
 function App() {
   const [bid, setBid] = useState(''); 
