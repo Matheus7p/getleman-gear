@@ -87,10 +87,12 @@ h2 span {
   margin-top: 10px;
   color: red;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .successMessage {
   margin-top: 10px;
   color: green;
   font-size: 1rem;
+  font-weight: bold;
 }
